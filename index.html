@@ -1,52 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Manas Kumar | Portfolio</title>
-</head>
-<body style="margin: 0; font-family: Arial, sans-serif; background: #f2f5f7; color: #333;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial">
+    <title>Manas | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
 
-    <header style="background: linear-gradient(90deg, #007bff, #00c6ff); padding: 20px; text-align: center; color: white;">
-        <h1 style="margin: 0;">Manas Kumar</h1>
-        <p style="margin: 5px 0;">Aspiring Software Engineer | Web Developer | Innovator</p>
-        <p style="margin: 5px 0;"><a href="https://www.linkedin.com/in/manas-kr/" style="color: white; text-decoration: underline;">Connect on LinkedIn</a></p>
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(170, 170, 240);
+            font-size: 1.05rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .aboutSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 60px 80px;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .aboutLeft img {
+            width: 500px;
+            border-radius: 20px;
+            height: 600px;
+            box-shadow: 0 0 20px rgba(170, 107, 228, 0.5);
+        }
+
+        .aboutRight {
+            max-width: 600px;
+            font-size: 1rem;
+        }
+
+        .aboutRight h1 {
+            font-size: 2rem;
+            color: rgb(170, 107, 228);
+            margin-bottom: 10px;
+        }
+
+        .aboutRight p {
+            margin-bottom: 15px;
+            color: #d1d1e0;
+        }
+
+        .aboutRight h2 {
+            margin-top: 20px;
+            color: rgb(170, 107, 228);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .skill-btn {
+            padding: 10px 16px;
+            border: 2px solid rgb(170, 107, 228);
+            border-radius: 25px;
+            color: white;
+            font-size: 1rem;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+
+        .skill-btn:hover {
+            background-color: rgba(170, 107, 228, 0.2);
+            cursor: pointer;
+            font-size: 1.05rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">♨️ Manas's Portfolio ♨️</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</li></a></li>
+                    <li><a href="/">Services</li></a></li>
+                    <li><a href="/">Projects</li></a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <section style="padding: 40px; text-align: center;">
-        <h2 style="color: #007bff;">About Me</h2>
-        <p style="max-width: 700px; margin: auto; line-height: 1.6;">
-            Hello! I'm Manas Kumar, a passionate tech enthusiast pursuing B.Tech in Information Science and Engineering at DSATM, Bangalore. 
-            I love working on innovative projects like "Divyang Mitra" and "Anti-Spoofing Model" that integrate AI, IoT, and smart systems.
-        </p>
-    </section>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Namaste🙏, My name is <span class="purple">Manas</span>
 
-    <section style="background: white; padding: 40px; text-align: center;">
-        <h2 style="color: #007bff;">Skills</h2>
-        <p style="max-width: 700px; margin: auto; line-height: 1.6;">
-            HTML | CSS | JavaScript | Python | C++ | Java | Arduino | IoT | APIs | GitHub | Figma | Canva
-        </p>
-    </section>
-
-    <section style="padding: 40px; text-align: center;">
-        <h2 style="color: #007bff;">Projects</h2>
-        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; margin-top: 30px;">
-            <div style="background: white; padding: 20px; width: 250px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                <h3 style="color: #333;">Divyang Mitra</h3>
-                <p style="font-size: 14px;">Smart Glasses for visually impaired using AI and IoT.</p>
-                <a href="https://github.com/cdt-manas/Divyang-Mitra.git" style="text-decoration: none; color: #007bff;">View Project</a>
+                <div>and I am a</div>
+                <span id="element"></span>
             </div>
-
-            <div style="background: white; padding: 20px; width: 250px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                <h3 style="color: #333;">Anti-Spoofing Model</h3>
-                <p style="font-size: 14px;">Enhanced liveness detection for secure face recognition.</p>
-                <a href="https://github.com/cdt-manas/Anti-Spoofing.git" style="text-decoration: none; color: #007bff;">View Project</a>
+            <div class="rightSection">
+                <img src="images/bg.png" alt="">
             </div>
-        </div>
-    </section>
+        </section>
+        <hr>
+        <section class="aboutSection">
+            <div class="aboutLeft">
+                <img src="/images/ld.gif" alt="Manas" />
+            </div>
+            <div class="aboutRight">
+                <h1>About Me</h1>
+                <p>
+                    I am a B.E undergraduate in Information Science & Engineering from DSATM, Bangalore,
+                    with a strong foundation in development, IoT, and core CS subjects. Skilled in Python,
+                    JavaScript, C++, and Solidity, I have hands-on experience with React, Django, Arduino,
+                    and ESP32.
+                </p>
+                <p>
+                    I’ve built impactful projects like Divyang Mitra (AI-powered smart glasses) and a facial
+                    anti-spoofing system focused on real-world applications. My interests include AI, Blockchain,
+                    and crypto, along with Web3 technologies.
+                </p>
+                <p>
+                    I’ve interned at PCBCUPID, contributing to frontend development and system integration.
+                    I’m also a Governor’s Award recipient, CSM in NCC, and winner of national-level hackathons.
+                    I enjoy building solutions that bridge hardware and software, and I’m always eager to learn
+                    and collaborate on innovative tech.
+                </p>
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span class="skill-btn">C</span>
+                    <span class="skill-btn">C++</span>
+                    <span class="skill-btn">Java</span>
+                    <span class="skill-btn">Python</span>
+                    <span class="skill-btn">JavaScript</span>
+                    <span class="skill-btn">Solidity</span>
+                    <span class="skill-btn">HTML</span>
+                    <span class="skill-btn">CSS</span>
+                    <span class="skill-btn">React.js</span>
+                    <span class="skill-btn">Django</span>
+                    <span class="skill-btn">DSA</span>
+                    <span class="skill-btn">DBMS</span>
+                    <span class="skill-btn">Operating Systems</span>
+                    <span class="skill-btn">Software Engineering</span>
+                    <span class="skill-btn">Web3</span>
+                    <span class="skill-btn">Smart Contracts</span>
+                    <span class="skill-btn">DApps</span>
+                    <span class="skill-btn">Git</span>
+                    <span class="skill-btn">GitHub</span>
+                    <span class="skill-btn">Figma</span>
+                    <span class="skill-btn">Canva</span>
+                    <span class="skill-btn">Arduino</span>
+                    <span class="skill-btn">ESP32</span>
+                    <span class="skill-btn">Load Cell</span>
+                    <span class="skill-btn">HX711</span>
+                </div>
+            </div>
+        </section>
+        <hr>
 
-    <footer style="background: #333; color: white; text-align: center; padding: 20px; font-size: 14px;">
-        <p>📧 cdt.manas01@gmail.com | 📞 9835709105 | 📍 Bangalore, India</p>
-    </footer>
-
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'IoT Innovator.', 'Blockchain Enthusiast.'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
+
 </html>
